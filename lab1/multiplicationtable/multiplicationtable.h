@@ -1,0 +1,20 @@
+//
+// Created by Daniel Warloch on 25-Mar-19.
+//
+
+#ifndef JIMP_EXERCISES_MULTIPLICATIONTABLE_H
+#define JIMP_EXERCISES_MULTIPLICATIONTABLE_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif //JIMP_EXERCISES_MULTIPLICATIONTABLE_H
