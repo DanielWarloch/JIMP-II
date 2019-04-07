@@ -5,8 +5,12 @@
 #include <iostream>
 #include "multiplicationtable.h"
 
-using namespace std;
 
 
 
-int main();
+
+int main(){
+    int tab[10][10];
+    MultiplicationTable(tab);
+    MultiplicationTable_Display(tab);
+}

@@ -10,6 +10,8 @@ private:
     int x;
     int y;
 public:
+    Point();
+    ~Point();
     void wczytaj();
     void wypisz();
     int getX();
@@ -24,6 +26,8 @@ private:
     int obw;
     int area_value;
 public:
+    Square();
+    ~Square();
     void wczytaj();
     void wypisz();
     void wypisz_area_obw();

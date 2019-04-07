@@ -6,7 +6,8 @@
 #define JIMP_EXERCISES_MULTIPLICATIONTABLE_H
 
 
-
+void MultiplicationTable(int tab[][10]);
+void MultiplicationTable_Display(int tab[][10]);
 
 
 

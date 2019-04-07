@@ -24,7 +24,14 @@ int Point::getX() {
     return y;
 }
 
+Point::Point() = default;
 
+Point::~Point() = default;
+
+Square::Square() {
+    wczytaj();
+}
+Square::~Square() = default;
 
 
 void Square::wczytaj() {

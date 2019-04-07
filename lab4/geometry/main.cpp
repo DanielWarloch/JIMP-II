@@ -7,9 +7,7 @@
 
 
 int main(){
-    Square kwadrat{};
-    kwadrat.wczytaj();
-    kwadrat.wypisz();
+    Square kwadrat;
     kwadrat.circumference();
     kwadrat.area();
     kwadrat.wypisz_area_obw();
