@@ -1,8 +1,7 @@
-
 project(polybius)
 
-set(HEDEAR_FILES Polybius.h)
-set(SOURCE_FILES Polybius.cpp)
+set(HEDEAR_FILES polybius.h)
+set(SOURCE_FILES polybius.cpp)
 
 add_library(libpolybius STATIC ${SOURCE_FILES})
 target_include_directories(libpolybius PUBLIC .)
