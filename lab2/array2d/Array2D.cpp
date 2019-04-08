@@ -16,45 +16,53 @@ std::pair<int, int> ask_for_size() {
     return size;
 }
 
-
-
-int **Array2D(int n_rows, int n_columns) {
-    if(n_columns == 0 || n_rows == 0)
+int **NewArray2D(int n_rows, int n_columns) {
+    if (n_columns <= 0 || n_rows <= 0)
         return nullptr;
     else {
-        int** rows = new int* [n_rows];
+        int **arr = new int *[n_rows];
         for (int i = 0; i < n_rows; ++i) {
-            rows[i] = new int [n_columns];
+            arr[i] = new int[n_columns];
         }
-        fill_array(rows, n_rows, n_columns);
-        return rows; }
+
+        return arr;
+    }
 }
 
-void DeleteArray2D(int** array, int n_rows, int n_columns) {
-    for (int i = 0; i < n_columns; ++i) {
-        delete array[i];
-        }
-    delete array;
+int **Array2D(int n_rows, int n_columns) {
+    auto arr = NewArray2D(n_rows, n_columns);
+    FillArray2D(n_rows, n_columns, arr);
+    return arr;
 }
 
-void display_array(int** array, int n_rows, int n_columns) {
+void DeleteArray2D(int** arr, int n_rows, int n_columns) {
+    if (arr != nullptr){
+    for (int i = 0; i < n_rows; ++i) {
+        delete arr[i];
+        }
+    delete arr;
+    }
+}
+
+void display_array(int** arr, int n_rows, int n_columns) {
     for (int i = 0; i < n_rows; ++i) {
         for (int j = 0; j < n_columns ; ++j) {
-            std::cout<< array[i][j] << "\t";
+            std::cout<< arr[i][j] << "\t";
         }
         std::cout<<std::endl;
     }
 }
 
-void fill_array(int** array, int n_rows, int n_columns) {
+void FillArray2D(int n_rows, int n_columns, int** arr) {
     int tmp = 1;
     for (int i = 0; i < n_rows; ++i) {
         for (int j = 0; j < n_columns; ++j) {
-            array[i][j] = tmp;
+            arr[i][j] = tmp;
             ++tmp;
         }
     }
 }
+
 
 
 

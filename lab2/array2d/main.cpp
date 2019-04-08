@@ -6,9 +6,9 @@
 
 int main(){
     auto size = ask_for_size();
-    auto ptr = Array2D(size.first, size.second);
-    fill_array(ptr,size.first, size.second);
-    display_array(ptr,size.first, size.second);
-    DeleteArray2D(ptr,size.first, size.second);
+    auto arr = Array2D(size.first, size.second);
+    FillArray2D(size.first, size.second, arr);
+    display_array(arr,size.first, size.second);
+    DeleteArray2D(arr,size.first, size.second);
 
 }
