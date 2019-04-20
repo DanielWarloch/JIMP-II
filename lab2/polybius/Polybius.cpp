@@ -2,7 +2,7 @@
 // Created by danwa on 08-Apr-19.
 //
 
-#include "polybius.h"
+#include "Polybius.h"
 
 std::string PolybiusCrypt(std::string message) {
     std::string message_crypted;
